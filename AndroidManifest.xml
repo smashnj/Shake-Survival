@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="edu.neu.madcourse.yongnanzhou_shake_survival"
+      android:versionCode="2"
+      android:versionName="1.0.1">
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="8" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>   
+    
+    <application android:icon="@drawable/shake_survival" android:label="Shake Survival" >
+        <activity 
+            android:name=".final_project.ShakeSurvivalMain"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> 
+        <activity 
+            android:name=".final_project.ShakeSurvivalMusic"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            />
+        <activity 
+            android:name=".final_project.SurvivalModeGame"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            />
+        <activity 
+            android:name=".final_project.TimeModeGame"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            />
+        <activity 
+            android:name=".final_project.SurvivalResult"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            />
+        <activity 
+            android:name=".final_project.TimeResult"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            />
+        <activity 
+            android:name=".final_project.HighestRecord"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            />
+        <activity 
+            android:name=".final_project.ShakeSurvivalAbout"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            />
+        <activity 
+            android:name=".final_project.ShakeSurvivalAcknowledgements"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            />
+        <activity
+            android:name=".final_project.Prefs"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            />
+        <activity
+            android:name=".final_project.ShakeSurvivalTutorial"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            />
+    </application>
+</manifest>

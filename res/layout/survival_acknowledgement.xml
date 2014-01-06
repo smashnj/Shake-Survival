@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/about_bg"
+    android:padding="5dip">
+    <LinearLayout
+	     android:id="@+id/ac_buttons"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:layout_alignParentBottom="true">
+		<Button
+		    android:id="@+id/survival_ac_back_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dip"
+		    android:text="About Shake Survival"
+		    android:textSize="16dip"
+		    android:background="@drawable/survival_button_style"/>
+		<TextView
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+		    android:textSize="5dip"
+		    android:textStyle="bold"
+		    android:layout_gravity="center"
+		    android:text=""/>
+		<Button
+		    android:id="@+id/survival_ac_menu_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dip"
+		    android:text="Shake Survival Menu"
+		    android:textSize="16dip"
+		    android:gravity="center"
+		    android:background="@drawable/survival_button_style"/>
+    </LinearLayout>
+    
+	 <ScrollView
+	   android:id="@+id/about_scroll"
+	   xmlns:android="http://schemas.android.com/apk/res/android"
+	   android:layout_width="fill_parent"
+	   android:layout_height="fill_parent"
+	   android:paddingTop="30dip"
+	   android:layout_above="@id/ac_buttons">
+		 <!--Scrollable content here-->
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">     
+		   <TextView
+		      android:id="@+id/survival_ac_content"
+		      android:layout_width="wrap_content"
+		      android:layout_height="wrap_content"
+		      android:textSize="15dip"
+		      android:textColor="#FFFFFF"
+		      android:text="@string/shakeSurvivalAcknowledgements_text"  />
+	   </LinearLayout>
+	 </ScrollView> 
+	 
+	 <TableLayout 
+         android:id="@+id/ac_title"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center"
+         android:stretchColumns="*"
+         android:padding="0dip">
+	    <TableRow>
+	     <TextView 
+	       android:id="@+id/survival_about_title"
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:text="Acknowledgements"
+	       android:layout_gravity="center"
+	       android:layout_marginBottom="0dip"
+	       android:textSize="24.5sp"
+	       android:textStyle="bold"
+	       android:textColor="#FFFFFF"
+	       android:shadowColor="#FF98F5FF"  
+	       android:shadowRadius="3"  
+	       android:shadowDx="1"  
+	       android:shadowDy="1" />
+	     </TableRow>
+    </TableLayout>
+</RelativeLayout>

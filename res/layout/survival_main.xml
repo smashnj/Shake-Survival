@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="@drawable/space_invader_bg"
+   android:gravity="center"
+   android:padding="30dip">
+   <TextView
+      android:id="@+id/survival_main_title"
+      android:text="Shake Survival"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginBottom="10dip"
+      android:textSize="40dip"
+      android:textColor="#FFFFFFFF"
+      android:shadowColor="#00ccff"  
+      android:shadowRadius="5"  
+      android:shadowDx="1"  
+      android:shadowDy="1"
+      android:textStyle="bold" />
+         <Button
+            android:id="@+id/survival_survival_resume_button"
+      		android:layout_width="fill_parent"
+      		android:layout_height="40dip"
+            android:text="Resume Survival Mode"
+            android:visibility="invisible" 
+            android:background="@drawable/survival_button_style" 
+            android:layout_marginBottom="7dip"
+            android:textSize="16dip" />
+         <Button
+            android:id="@+id/survival_speed_resume_button"
+      		android:layout_width="fill_parent"
+      		android:layout_height="40dip"
+      		android:text="Resume Time Mode"
+      		android:visibility="invisible" 
+      		android:background="@drawable/survival_button_style" 
+      		android:layout_marginBottom="7dip"
+      		android:textSize="16dip"  />
+         <Button
+            android:id="@+id/survival_survival_new_button"
+            android:layout_width="fill_parent"
+      		android:layout_height="40dip"
+            android:text="Survival Mode"
+            android:background="@drawable/survival_button_style"
+            android:layout_marginBottom="7dip"
+            android:textSize="16dip"  />
+         <Button
+            android:id="@+id/survival_speed_new_button"
+            android:layout_width="fill_parent"
+      		android:layout_height="40dip"
+            android:text="Time Mode"
+            android:background="@drawable/survival_button_style"
+            android:layout_marginBottom="7dip"
+            android:textSize="16dip"  />
+         <Button
+            android:id="@+id/survival_ranking_button"
+      		android:layout_width="fill_parent"
+      		android:layout_height="40dip"
+            android:text="Ranking"
+            android:visibility="gone"
+            android:background="@drawable/survival_button_style"
+            android:layout_marginBottom="7dip"
+            android:textSize="16dip"  />
+         <Button
+            android:id="@+id/survival_highest_button"
+      		android:layout_width="fill_parent"
+      		android:layout_height="40dip"
+            android:text="Highest Record"
+            android:background="@drawable/survival_button_style"
+            android:layout_marginBottom="7dip" 
+            android:textSize="16dip" />
+         <Button
+            android:id="@+id/survival_about_button"
+            android:layout_width="fill_parent"
+      		android:layout_height="40dip"
+            android:text="About"
+            android:background="@drawable/survival_button_style"
+            android:layout_marginBottom="7dip"
+            android:textSize="16dip"/>
+         <LinearLayout android:orientation="horizontal"
+					   android:layout_width="fill_parent"
+					   android:layout_height="wrap_content">
+					<Button
+				            android:id="@+id/survival_options_button"
+				      		android:layout_width="fill_parent"
+				      		android:layout_height="40dip"
+				            android:text="Options"
+				            android:background="@drawable/survival_button_style"
+				            android:layout_marginBottom="7dip" 
+				            android:textSize="16dip"
+				            android:layout_weight="1"
+				            android:layout_marginRight="5dip" />
+					<Button
+				            android:id="@+id/survival_turtorial_button"
+				            android:layout_width="fill_parent"
+				      		android:layout_height="40dip"
+				            android:text="Tutorial"
+				            android:background="@drawable/survival_button_style"
+				            android:layout_marginBottom="7dip"
+				            android:textSize="16dip"
+				            android:layout_weight="1" />
+		</LinearLayout>
+        <Button
+      		android:id="@+id/survival_acknowledgements_button"
+      		android:layout_width="fill_parent"
+      		android:layout_height="40dip"
+      		android:text="Acknowledgements"
+      		android:visibility="gone" 
+      		android:background="@drawable/survival_button_style"
+      		android:layout_marginBottom="7dip"
+      		android:textSize="16dip" />
+        <Button
+            android:id="@+id/survival_exit_button"
+            android:layout_width="fill_parent"
+      		android:layout_height="40dip"
+            android:text="Exit"
+            android:background="@drawable/survival_button_style" 
+            android:textSize="16dip" />
+</LinearLayout>

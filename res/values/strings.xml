@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xsl:stylesheet [<!ENTITY nbsp "&#160;">]>
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<resources>
+   <string name="app_name">NUMAD-YongnanZhou</string>
+   <string name="main_title">Yongnan Zhou</string>
+   <string name="new_game_label">New Game</string>
+   <string name="exit_label">Exit</string>
+   <string name="boggle_score_title">Score:</string>
+   <string name="settings_label">Settings...</string>
+   <string name="settings_title">Sudoku settings</string>
+   <string name="settings_shortcut">s</string>
+   <string name="music_title">Music</string>
+   <string name="music_summary">Play background music</string>
+   <string name="hints_title">Hints</string>
+   <string name="hints_summary">Show hints during play</string>
+   <string name="boggle_game">Boggle</string>
+   <string name="singleplayer_label">Single Player</string>
+   <string name="multiplayer_label">Play with a friend</string>
+   <string name="top_score_list_label">Top Scores</string>
+   <string name="new_board_size">Board Size</string>
+   <string name="acknowledgements">Acknowledgements</string>
+   <string name="persistent_boggle_game_title">Persistent Boggle</string>
+   <string name="boggle_about_title">About Android Boggle</string>
+   <string name="boggle_result">Game Result</string>
+   <string name="persistent_score_board">Score Board</string>
+   
+   <string name="appVersion">Version 3.0</string>
+   <string name="emailAddress">zhou.yo@husky.neu.edu</string>
+   <string name="memberName">Yongnan Zhou</string>
+   <string name="phoneID">Phone ID : </string>
+   
+   <string name="fivebyfive">5 X 5</string>
+   <string name="fourbyfour">4 X 4</string>
+   <string name="sixbysix">6 X 6</string>
+   <string name="boggle_about_text">\
+       
+       When a player enters "play with a friend", he/she gets playerID automaticallly.
+       To play with an opponent, one player should get an "A" in his\her playerID. 
+       The other one should get a "B" in his\her playerID.\n
+       If you and your opponent can not get "A" or "B", either one can tap "Back" and try again.\n
+       The first one who enters "play with a friend" gets "A" normally, the second one gets "B" normally.\n
+       The "A" player should firstly select the size and enter the game, and then the "B" player wil enter the game according to the size "A" chosen.\n
+       \n
+       This is a new designed boggle game, which allows you to play with another friend.
+And the interaction experience is really good that you can see the opponent\'s activity
+notified by the system periodically. Also you can pick different size of the board, such
+as 4 X 4, 5 x 5, 6 x 6. 
+   </string>
+   <string name="boggle_acknowledgements_text">\n
+       1. GamePlay Sound:\n sc.chinaz.com\n
+       2. Background Photo:\n Google\n
+       3. Wikipedia: \nDescription of Boggle Game Rules  and Trietree.\n 
+       4. Get date and time: \n
+		http://stackoverflow.com/questions/5175728/how-to-get-the-current-date-time-in-java \n
+	   5.AsyncTask:\n
+		http://developer.android.com/reference/android/os/AsyncTask.html\n
+		http://stackoverflow.com/questions/9671546/asynctask-android-example\n
+	   6.Thread:\n
+		http://stackoverflow.com/questions/8230606/android-run-thread-in-service-every-x-seconds\n
+   </string>
+   <string name="new_game_title">Difficulty</string>
+   <string name="easy_label">Easy</string>
+   <string name="medium_label">Medium</string>
+   <string name="hard_label">Hard</string>
+
+   <string name="game_title">Game</string>
+   <string name="no_moves_label">No moves</string>
+   <string name="keypad_title">Keypad</string>
+   <string name="team_text">\n
+       						Name: Yongnan Zhou\n
+       							  Nen Xi\n
+       					    Email: zhou.yo@husky.neu.edu\n
+       					    	   xi.n@husky.neu.edu\n
+       					    Version: 3.0\n
+       					    PhoneID: 000000000000000</string>
+   <string name="team_title">Team Members Information</string>
+   <string name="team_label">Team Members</string>
+   <string name="error_label">Create Error</string>
+   <string name="error_title">Error</string><string name="about_label">About</string><string name="continue_label">Continue</string><string name="about_text">\
+Sudoku is a logic-based number placement puzzle.
+Starting with a partially completed 9x9 grid, the
+objective is to fill the grid so that each
+row, each column, and each of the 3x3 boxes
+(also called <i>blocks</i>) contains the digits
+1 to 9 exactly once.
+</string><string name="about_title">About Android Sudoku</string>
+<string name="togame_label">Sudoku</string>
+<string name="quit_label">Quit</string>
+<string name="sudoku_title">Sudoku</string>
+<string name="boggle_label">Boggle</string>
+<string name='resume_label'>Resume</string>
+<string name="rule_label">Rule</string>
+<string name="rule_title">How to get points?</string>
+<string name="rule_text">\
+       Boggle players receive 100 points for each unique three letter word.\n 
+       For words over three letters long, players receive 100 points plus 100 additional points for each letter over three. 
+       So, for example, a five letter word in Boggle would be worth 300 points. 
+       100 points for the first three letters and then 200 points for the fourth and fifth letters. 
+       Words less then three letters receive no points in Boggle.
+	</string>
+<string name="boggle_title">Boggle</string>
+
+<string name="acknowledgements_label">Acknowledgements</string>
+<string name="acknowledgements_title">Acknowledgements</string>
+<string name="acknowledgements_text">\
+Material:\n
+Click sound:\n
+http://sc.chinaz.com/yinxiao/1331312140.htm\n
+\n
+score sound:\n
+http://mobile.91.com/Ring/36089.html\n
+\n
+bg music: \n
+http://music1.tianya.cn/upmusicfile/2010/3/14/139256_27937776.mp3\n
+\n
+Reference:\n
+Vibration:\n
+http://android.konreu.com/developer-how-to/vibration-examples-for-android-phone-development\n
+\n
+Create a random number:\n
+http://www.cs.geneseo.edu/~baldwin/reference/random.html\n
+\n
+Read Text File:\n
+http://www.java-forums.org/new-java/7001-reading-text-file-into-array.html\n
+\n
+Timer:\n
+http://developer.android.com/reference/android/os/CountDownTimer.html\n
+http://stackoverflow.com/questions/9630398/how-can-i-pause-the-timer-in-android/9663508#9663508</string>
+<string name="persistent_boggle_label">Persistent Boggle</string>
+<string name="pb_acknowledgements_text"/>
+<string name="pb_rule_text"></string>
+<string name="persistent_boggle_title">Persistent Boggle</string>
+<string name="scores_label">Top Scores</string>
+<string name="persistent_boggle_connect">Connecting...</string>
+<string name="persistent_boggle_about_popup">
+    	\n
+       \n
+       \n
+       \n
+       \n
+When a player enters "play with a friend", he/she gets playerID automaticallly.
+       To play with an opponent, one player should get an "A" in his\her playerID. 
+       The other one should get a "B" in his\her playerID.\n
+       If you and your opponent can not get "A" or "B", either one can tap "Back" and try again.\n
+       The first one who enters "play with a friend" gets "A" normally, the second one gets "B" normally.\n
+       The "A" player should firstly select the size and enter the game, and then the "B" player wil enter the game according to the size "A" chosen.\n
+       \n
+ </string>
+ 	<string name="sensorDescription_text">
+   This is a sample that uses internal sensor to collect data and interact with users.
+   You can tilt the phone to find the answer of the math, and by shaking the phone to
+   gain more time. These main techniques would be integrated into our final projects once
+   our main framework is done.
+</string>
+<string name="sensorTesting_text">
+    This page is mainly doing testing on internal Accelerometer sensor, user can shake the
+    phone by the direction of single or multiple axis, and the counter for the shaking motion 
+    will increment by 1 respectively. Moreover, flipping the phone downwards and upwards will
+    count as 1 flipping. Enjoy...
+</string>
+<string name="shakeSurvivalAbout_text">\
+    <b>Overview:\n</b>
+    In the game, there are many space invaders moving upward at every specific time interval. 
+    If there are any invaders cross the white line in front of the green cannon, the game is over.
+    New wave of invaders comes at every specific time interval.
+    The time interval for new invaders becomes smaller and smaller and the invaders move faster and faster at every specific time interval.
+    That is to say, the difficulty of the game increases at every specific time interval.
+    Moreover, there is a defensive wall behind the alert line, which can kill specific number of space invaders based on its HP.
+    Bonus, such as 20 units of energy or a super bomb or 10 units of HP for the defensive wall, will appear near the cannon.
+    There are two modes in the game, including survival mode and time mode.\n
+    \n
+    <b>How to play:</b> \n
+    You can kill an invader by tapping your screen once using 2 units of energy.\n
+    You can kill a lot of invaders by keeping touching your screen and raising your phone and putting it down
+    quickly using 10 units of energy.\n
+    You can get 4 units of energy and add 1 unit of HP to the defensive wall by shaking your phone once.\n
+    You can get 10 units of energy by flipping your phone downward and then upward once.\n
+    You can move the green cannon by slightly tilting your phone left or right.\n 
+    \n
+    <b>About Survival Mode:</b>\n
+    In survival mode, you have to keep killing invaders in order to survive as long as possible.
+    The new wave of invaders comes faster and faster and the invaders move faster and faster every 20 seconds.
+    And bonus appears every 10 seconds.\n
+    \n
+    <b>About Time Mode:</b>\n
+    In time mode, space invaders move upward faster and new space invaders come faster than survival mode.
+    Moreover, you have only 60 seconds to get points as many as possible. If you kill one invader, you can get 10 points.
+    Also, if you get a bonus, you can get 30 bonus points.
+    The new wave of invaders comes faster and faster and the invaders move faster and faster every 5 seconds.
+    And bonus appears every 5 seconds.\n
+    \n
+    <b>About Us:</b>\n
+    Yongnan Zhou\n
+    zhou.yo@husky.neu.edu\n
+    Nen Xi\n
+    xi.n@husky.neu.edu\n
+    Northeastern University
+    2012
+</string>
+<string name="shakeSurvivalAcknowledgements_text">\
+    Reference:\n
+    Alert dialog:\n
+	http://www.mkyong.com/android/android-alert-dialog-example/\n
+	\n
+	Custom font:\n
+	http://mobile.tutsplus.com/tutorials/android/customize-android-fonts/\n
+	http://www.fontsquirrel.com/\n
+	\n
+	Button style:\n
+	http://www.2cto.com/kf/201108/100751.html\n
+	\n
+	Custom SeekBar Preference:\n
+	http://robobunny.com/wp/2011/08/13/android-seekbar-preference/\n
+	\n
+	Sensor Docs:\n
+	http://developer.android.com/reference/android/hardware/Sensor.html\n
+	\n
+	Other helpful tips:\n
+	http://www.StackOverFlow.com\n
+	\n
+	Materials:\n
+	Sound effect:\n
+	Invader alert sound effect:\n
+	down.yisell.com/paipai/papp1001080928513688/sound/paipai_sound_2008030317065029839_88011.mp3\n
+	\n
+	No energy alert sound effect:\n
+	down.yisell.com/paipai/papp1001080928513688/sound/paipai_sound_2008030317063548882_88011\n
+	\n
+	Countdown sound effect:\n
+	http://www.tudou.com/programs/view/t26QPTemeJI/\n
+	\n
+	One line of invaders killed sound effect:\n
+	http://sc.chinaz.com/yinxiao/1331312140.htm\n
+	\n
+	Game over/menu/super bomb/get bonus sound effect:\n
+	http://www.66rpg.com/articles.php?id=1207\n
+	\n
+	Other sound effects:\n
+	http://sc.chinaz.com/tag_yinxiao/kaishi.html\n
+	\n
+	Ready images:\n
+	ready_http-//trac.emma-soft.com/amoebax/browser/trunk/data/graphics/ready.png?rev=505\n
+	http://forums.penny-arcade.com/discussion/105989/miniphalla-phallakart-mini-circuit-tryclyde-obtains-the-mini-cup/p4\n
+	\n
+	Images:\n
+	Bonus images:\n
+	Number20_http-//www.vnutz.com/powerball_lottery/winning_pairs.png\n
+	Button_b_http-//deadisland.wikia.com/wiki/File-Button_b\n
+	21_yellow_black_10_http-//www.free-pictogram.com/wp-content/uploads/2011/01/21_yellow_black_10\n
+	\n
+	Super bomb effect image:\n
+	http-//www.fhsclassof2007.com/reunion.png\n
+	\n
+	Smoke images:\n
+	https-//kforge.ros.org/gazebo/trac/browser/Media/materials/textures/smoke.png?rev=0\n
+	http://www.imarvintpa.com/Mapping/Overlays/Effects/Air/\n
+	\n
+	Fire effect image:\n
+	http-//www.clker.com/clipart-explosion.png\n
+	\n
+	Pause button image:\n
+	http-//www.shrimpfarmmarket.com/poMMo/themes/shared/images/icons/pause.png\n
+	\n
+	Castle image:\n
+	http-//help.strongholdkingdoms.com/index.php/Enemy_AI.png\n
+	\n
+	UFO image:\n
+	http-//metalslug.wikia.com/wiki/File-Ufo.gif\n
+	\n
+	Cannon image:\n
+	http-//facepunch.com/showthread.php?t=933143.png\n
+	\n
+	Space invader image:\n
+	http-//thargos.deviantart.com/art/animated-space-invader-5782893.gif\n
+	\n
+	Game background image:\n
+	http-//www.emanueleferonato.com/2007/06/06/95/.jpg\n
+	\n
+	Main menu background image:\n
+	http-//www.movie-moron.com/?p=16988.jpeg\n
+	\n
+	Button background images:\n
+	http-//wonderworlds.org/backgrounds/snowflakes_paper_background_fills_snowflakes_to_write_on.htm\n
+	http-//vector-art-graphics.com/Buy-Vector-Art-Graphics-of/Snowflake-Christmas-With-White-Snow-Flake-Eps-8/4275562.jpg\n
+	\n
+	About background image:\n
+	http://www.graphixcreations.com/black-twitter-backgrounds/\n
+	\n
+	Game over result background image:\n
+	http://www.scienceclarified.com/Sp-Th/Star.html\n
+	\n
+	Hihgest record background image:\n
+	http://jootix.com/DesktopWallpapers/825/Space+Multi+Monitor/1440/900/\n
+	\n
+	Alert sign image:\n
+	http://www.soniccheerremixes.com/2011/image_library/alert.png\n
+	\n
+	Energy sign image:\n
+	http-//sims.wikia.com/wiki/The_Sims_Social\n
+	\n
+	Wall HP bonus image:\n
+	http-//findicons.com/icon/73879/netvibes.png\n 
+	\n
+	Wall images:\n
+	http-//www.softicons.com/free-icons/toolbar-icons/fugue-24px-icons-by-yusuke-kamiyamane/wall-icon.png\n
+	http-//www.softicons.com/free-icons/toolbar-icons/led-icon-set-by-led24.de/wall-icon.png\n
+	http-//www.softicons.com/free-icons/toolbar-icons/mono-reflection-red-icons-by-double-j-design/wall-icon.png\n
+	\n
+	Blast image:\n
+	http-//christopherraeburn.co.uk/collections.png\n
+	\n
+	Alarm clock image:\n
+	www.softicons.com/free-icons/business-icons/perfect-time-icons-by-aha-soft/alarm-icon.png\n
+	\n
+	Cross image, arrow image, target image:\n
+	getsatisfaction.com/locus/topics/increased_cursor_size_visibility\n
+	\n
+</string>
+</resources>

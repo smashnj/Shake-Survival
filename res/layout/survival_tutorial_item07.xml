@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center" >
+    <TextView
+      android:text=""
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_gravity="center"
+      android:textSize="10dip"/>
+    <TextView
+      android:id="@+id/tutorial_main_title"
+      android:text="End"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="0dip"
+      android:textSize="40dip"
+      android:textColor="#FFFFFFFF"
+      android:shadowColor="#00ccff"  
+      android:shadowRadius="5"  
+      android:shadowDx="1"  
+      android:shadowDy="1"
+      android:textStyle="bold" />
+    <TextView
+      android:text=""
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_gravity="center"
+      android:textSize="10dip"/>
+    <TextView
+      android:id="@+id/turtoial_main_title"
+      android:text="Tap the skip button"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="0dip"
+      android:textSize="30dip"
+      android:textColor="#FFFFFFFF"
+      android:shadowColor="#00ccff"  
+      android:shadowRadius="5"  
+      android:shadowDx="1"  
+      android:shadowDy="1"
+      android:textStyle="bold" />
+    <ImageView  
+        android:layout_width="fill_parent"  
+        android:layout_height="fill_parent"  
+        android:background="@drawable/space_invader_bg" >  
+    </ImageView>
+    
+</LinearLayout>

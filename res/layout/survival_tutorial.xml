@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guidePages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+       
+    <RelativeLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:orientation="vertical" >
+        
+    <LinearLayout
+	     android:id="@+id/tutorial_buttons"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:layout_alignParentBottom="true">
+	    <Button 
+	        android:id="@+id/tutorial_back_button"
+		    android:layout_width="wrap_content"
+		    android:layout_height="40dip"
+		    android:textSize="16dip"
+		    android:layout_alignParentBottom="true"
+		    android:text="Skip"
+		    android:background="@drawable/survival_button_style" />
+	</LinearLayout>
+	
+    <LinearLayout  
+        android:id="@+id/viewGroup"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"   
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"    
+        android:gravity="center_horizontal"  
+        android:orientation="horizontal"
+        android:layout_above="@id/tutorial_buttons">  
+    </LinearLayout> 
+   
+    <LinearLayout
+	     android:id="@+id/tutorial_title"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="center"
+         android:layout_above="@id/tutorial_buttons"> 
+    <TextView 
+	       android:layout_width="fill_parent"
+	       android:layout_height="wrap_content"
+	       android:text="Slide"
+	       android:layout_gravity="center"
+	       android:layout_marginLeft="1dip"
+	       android:textSize="21.0sp"
+	       android:textStyle="bold"
+	       android:textColor="#FFFFFF"
+	       android:shadowColor="#FF98F5FF"  
+	       android:shadowRadius="3"  
+	       android:shadowDx="1"  
+	       android:shadowDy="1"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

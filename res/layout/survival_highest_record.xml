@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/blue_space"
+    android:padding="6dip">
+    
+    <TableLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center"
+         android:stretchColumns="*"
+         android:padding="10dip">
+	    <TableRow>
+	    <TextView
+	      android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+	      android:textSize="30dip"
+	      android:textStyle="bold"
+	      android:layout_gravity="center"
+	      android:text="Highest Record"
+	      android:textColor="#FF98F5FF"
+	      android:shadowColor="#ffffff"  
+	      android:shadowRadius="3"  
+	      android:shadowDx="1"  
+	      android:shadowDy="1"/>
+	    </TableRow>
+	    <TableRow>
+	    <TextView
+	      android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+	      android:textSize="5dip"
+	      android:textStyle="bold"
+	      android:layout_gravity="center"
+	      android:text=""/>
+	    </TableRow>
+    </TableLayout>
+    
+    <View 
+	  android:layout_width="fill_parent" 
+      android:layout_height="1dp" 
+      android:paddingTop="20dp" 
+      android:background="#cccccc"/> 
+    
+    <TableLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center"
+         android:stretchColumns="*"
+         android:padding="5dip">
+	   <TableRow>
+	    <TextView
+	      android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+	      android:textSize="20dip"
+	      android:textStyle="bold"
+	      android:layout_gravity="center"
+	      android:text="Survival Mode"
+	      android:textColor="#FFFFFF99"/>
+	    <TextView
+	      android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+	      android:textSize="20dip"
+	      android:textStyle="bold"
+	      android:layout_gravity="center"
+	      android:text="Time Mode"
+	      android:textColor="#FFFFFF99"/>
+	   </TableRow>
+   </TableLayout>
+   
+    <TableLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center"
+         android:stretchColumns="*"
+         android:padding="5dip">
+	   <TableRow>    
+	     <TextView
+	      android:id="@+id/survival_record_survival_time"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Survival Time: 0 s"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />     
+	     <TextView
+	      android:id="@+id/speed_record_points"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Points: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />        
+	    </TableRow>
+	    
+	    <TableRow>
+	     <TextView
+	      android:id="@+id/survival_record_killed"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Invaders Killed: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />   
+	     <TextView
+	      android:id="@+id/speed_record_killed"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Invaders Killed: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />        
+	    </TableRow>
+	    
+	    <TableRow>       
+	     <TextView
+	      android:id="@+id/survival_record_bonus"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Bonus: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />     
+	     <TextView
+	      android:id="@+id/speed_record_bonus"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Bonus: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />        
+	    </TableRow>
+	    
+	    <TableRow>
+	     <TextView
+	      android:id="@+id/survival_record_shakes"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Shake Times: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF"/>   
+	     <TextView
+	      android:id="@+id/speed_record_shakes"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Shake Times: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF"/>        
+	    </TableRow>
+	    
+	    <TableRow>
+	     <TextView
+	      android:id="@+id/survival_record_reverses"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Reverse Times: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF"/>   
+	     <TextView
+	      android:id="@+id/speed_record_reverses"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Reverse Times: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF"/>        
+	    </TableRow>
+	    
+	    <TableRow>
+	     <TextView
+	      android:id="@+id/survival_record_jumps"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Jump Times: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" /> 
+	     <TextView
+	      android:id="@+id/speed_record_jumps"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Jump Times: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />        
+	    </TableRow>
+	    
+	    <TableRow>
+	     <TextView
+	      android:id="@+id/survival_record_calorie"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Calories Burned: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />   
+	     <TextView
+	      android:id="@+id/speed_record_calorie"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Calories Burned: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />        
+	    </TableRow>
+	    
+	    <TableRow>
+	     <TextView
+	      android:id="@+id/survival_record_date"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Date: 2012-11-27"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />   
+	     <TextView
+	      android:id="@+id/speed_record_date"
+	      android:layout_width="fill_parent"
+	      android:layout_height="28dip"
+	      android:textSize="14dip"
+	      android:text="Date: 2012-11-27"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFFFF" />        
+	    </TableRow>
+    </TableLayout>
+    
+    <View 
+	  android:layout_width="fill_parent" 
+      android:layout_height="1dp" 
+      android:paddingTop="20dp" 
+      android:background="#cccccc"/>
+    <TextView
+      android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+      android:textSize="5dip"
+      android:textStyle="bold"
+      android:layout_gravity="center"
+      android:text=""/>
+     
+    <TableLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center"
+         android:stretchColumns="*"
+         android:padding="0dip">
+	   <TableRow>
+	    <TextView
+	      android:id="@+id/highest_record_total_calories"
+	      android:layout_width="fill_parent"
+	      android:layout_height="25dip"
+	      android:textSize="16dip"
+	      android:text="Calories Burned so far: 0"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFF99" />        
+	    </TableRow>
+	    <TableRow>
+	    <TextView
+	      android:id="@+id/highest_record_start_date"
+	      android:layout_width="fill_parent"
+	      android:layout_height="25dip"
+	      android:textSize="16dip"
+	      android:text="Since 2012-11-30"
+	      android:layout_gravity="center"
+	      android:textStyle="bold"
+	      android:textColor="#FFFFFF99" />        
+	    </TableRow>
+   </TableLayout>
+    
+    <TextView
+      android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+      android:textSize="5dip"
+      android:textStyle="bold"
+      android:layout_gravity="center"
+      android:text=""/>
+    
+    <View 
+	  android:layout_width="fill_parent" 
+      android:layout_height="1dp" 
+      android:paddingTop="20dp" 
+      android:background="#cccccc"/>
+      
+    <TextView
+      android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+      android:textSize="10dip"
+      android:textStyle="bold"
+      android:layout_gravity="center"
+      android:text=""/>
+    
+    <Button
+	    android:id="@+id/survival_record_clear_button"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dip"
+	    android:text="Clear Record"
+	    android:textSize="16dip"
+	    android:background="@drawable/survival_button_style"/>
+    <TextView
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+		    android:textSize="5dip"
+		    android:textStyle="bold"
+		    android:layout_gravity="center"
+		    android:text=""/>
+    <Button
+	    android:id="@+id/survival_record_back_button"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dip"
+	    android:text="Back"
+	    android:textSize="16dip"
+	    android:background="@drawable/survival_button_style"/>
+</LinearLayout>

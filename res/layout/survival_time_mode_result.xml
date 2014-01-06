@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="6dip"
+    android:background="@drawable/result_bg"
+    android:gravity="center">
+    
+    <TableLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center"
+         android:stretchColumns="*"
+         android:padding="10dip">
+    <TableRow>
+    <TextView
+      android:id="@+id/speed_result_new_record"
+      android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+      android:textSize="35dip"
+      android:textStyle="bold"
+      android:layout_gravity="center"
+      android:text="Game Over!"
+      android:textColor="#FFFFFF00"
+      android:shadowColor="#ffffff"  
+      android:shadowRadius="3"  
+      android:shadowDx="1"  
+      android:shadowDy="1"/>
+    </TableRow>
+    <TableRow>
+    <TextView
+      android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+      android:textSize="5dip"
+      android:textStyle="bold"
+      android:layout_gravity="center"
+      android:text=""/>
+    </TableRow>
+    </TableLayout>
+    
+    <View 
+	  android:layout_width="fill_parent" 
+      android:layout_height="1dp" 
+      android:paddingTop="20dp" 
+      android:background="#cccccc"/> 
+    
+    <TableLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center"
+         android:stretchColumns="*"
+         android:padding="10dip">
+   <TableRow>
+    <TextView
+      android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+      android:textSize="25dip"
+      android:textStyle="normal"
+      android:layout_gravity="center"
+      android:text="Time Mode"
+      android:textColor="#FFFFFF99"
+      android:shadowColor="#ffffff"  
+      android:shadowRadius="2"  
+      android:shadowDx="1"  
+      android:shadowDy="1"/>
+   </TableRow>
+   </TableLayout>
+   
+    <TableLayout 
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:layout_gravity="center"
+         android:stretchColumns="*"
+         android:padding="5dip">
+   <TableRow>
+     <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="Points:  "
+      android:layout_gravity="right"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" />    
+     <TextView
+      android:id="@+id/speed_result_points"
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="0"
+      android:layout_gravity="left"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" />        
+    </TableRow>
+    
+    <TableRow>
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="Invaders Killed:  "
+      android:layout_gravity="right"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" />    
+     <TextView
+      android:id="@+id/speed_result_killed"
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="0"
+      android:layout_gravity="left"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" />        
+    </TableRow>
+    
+    <TableRow>
+    <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="Bonus:  "
+      android:layout_gravity="right"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" />    
+     <TextView
+      android:id="@+id/speed_result_bonus"
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="0"
+      android:layout_gravity="left"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" />        
+    </TableRow>
+    
+    <TableRow>
+     <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="Shake Times:  "
+      android:layout_gravity="right"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" /> 
+     <TextView
+      android:id="@+id/speed_result_shakes"
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="0"
+      android:layout_gravity="left"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF"/>        
+    </TableRow>
+    
+    <TableRow>
+     <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="Flip Times:  "
+      android:layout_gravity="right"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" /> 
+     <TextView
+      android:id="@+id/speed_result_reverses"
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="0"
+      android:layout_gravity="left"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF"/>        
+    </TableRow>
+    
+    <TableRow>
+     <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="Raise Times:  "
+      android:layout_gravity="right"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" /> 
+     <TextView
+      android:id="@+id/speed_result_jumps"
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="0"
+      android:layout_gravity="left"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" />        
+    </TableRow>
+    
+    <TableRow>
+     <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="Calories Burned:  "
+      android:layout_gravity="right"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" /> 
+     <TextView
+      android:id="@+id/speed_result_calorie"
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="0"
+      android:layout_gravity="left"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" />        
+    </TableRow>
+    
+    <TableRow>
+     <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="Date and Time:  "
+      android:layout_gravity="right"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" /> 
+     <TextView
+      android:id="@+id/speed_result_date"
+      android:layout_width="fill_parent"
+      android:layout_height="30dip"
+      android:textSize="17dip"
+      android:text="default date"
+      android:layout_gravity="left"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF" />        
+    </TableRow>
+    </TableLayout>
+    
+    <View 
+	  android:layout_width="fill_parent" 
+      android:layout_height="1dp" 
+      android:paddingTop="20dp" 
+      android:background="#cccccc"/> 
+      
+    <TextView
+      android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+      android:textSize="10dip"
+      android:textStyle="bold"
+      android:layout_gravity="center"
+      android:text=""/>
+    
+    <Button
+	    android:id="@+id/speed_mode_replay_button"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dip"
+	    android:text="Play Again"
+	    android:textSize="16dip"
+	    android:background="@drawable/survival_button_style"/>
+    <TextView
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+		    android:textSize="5dip"
+		    android:textStyle="bold"
+		    android:layout_gravity="center"
+		    android:text=""/>
+    <Button
+	    android:id="@+id/speed_mode_menu_button"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dip"
+	    android:text="Main Menu"
+	    android:textSize="16dip"
+	    android:background="@drawable/survival_button_style"/>
+</LinearLayout>
